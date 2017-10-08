@@ -1,7 +1,5 @@
 package loggers;
 
 public enum LoggerType {
-	STATUS,
-	WARNING, 
-	ERROR
+	STATUS, WARNING, ERROR
 }
