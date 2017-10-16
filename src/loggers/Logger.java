@@ -2,6 +2,7 @@ package loggers;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import edu.wpi.first.wpilibj.Utility;
@@ -33,8 +34,10 @@ public abstract class Logger {
 		// init type
 		this.type = type;
 
-		// FIXME: format date
-		String formattedDate = "";
+		//date formatter
+		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy-HH~mm~ss");
+		//format date
+		String formattedDate = formatter.format(start);
 
 		// init printwriter
 		try {

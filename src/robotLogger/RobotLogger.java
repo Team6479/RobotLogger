@@ -14,7 +14,7 @@ public class RobotLogger {
 	//singleton instance
 	private static final RobotLogger instance = new RobotLogger();
 	//access logger
-	public RobotLogger getInstance() {
+	public static RobotLogger getInstance() {
 		return instance;
 	}
 	
